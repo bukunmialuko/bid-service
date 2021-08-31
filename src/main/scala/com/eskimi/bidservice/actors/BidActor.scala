@@ -9,8 +9,8 @@ object BidActor {
 
   // Actor should send and receive messages
   sealed trait BidMessage
-  // Bid request message should hold a bid request and an actor to which it returns the
-  // processed result to.
+  // Bid request message of type BidMessage should hold a bid request and an actor to which it returns the
+  // processed result of type BidResponseMessage to.
   final case class BidRequestMessage(bidRequest: BidRequest, replyTo: ActorRef[BidResponseMessage]) extends BidMessage
   final case class BidResponseMessage(bidResponse: Option[BidResponse]) extends BidMessage
 
