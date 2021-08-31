@@ -1,6 +1,6 @@
 package com.eskimi.bidservice.utils
 
-import com.eskimi.bidservice.models._
+import com.eskimi.bidservice.model._
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
 import spray.json.{DefaultJsonProtocol, PrettyPrinter}
 

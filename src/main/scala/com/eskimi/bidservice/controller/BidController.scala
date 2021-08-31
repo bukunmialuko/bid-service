@@ -1,18 +1,18 @@
-package com.eskimi.bidservice.controllers
+package com.eskimi.bidservice.controller
 
 import akka.actor.typed.scaladsl.AskPattern._
 import akka.actor.typed.{ActorRef, ActorSystem}
 import akka.http.scaladsl.model.StatusCodes.NoContent
 import akka.http.scaladsl.server.{Directives, Route}
 import akka.util.Timeout
-import com.eskimi.bidservice.actors.BidActor.{BidRequestMessage, BidResponseMessage}
-import com.eskimi.bidservice.models.BidRequest
+import com.eskimi.bidservice.actor.BidActor.{BidRequestMessage, BidResponseMessage}
+import com.eskimi.bidservice.model.BidRequest
 import com.eskimi.bidservice.utils.JsonSupport
 
 import scala.concurrent.Future
 
-class BidRoutes(bidActor: ActorRef[BidRequestMessage])
-               (implicit val system: ActorSystem[_])
+class BidController(bidActor: ActorRef[BidRequestMessage])
+                   (implicit val system: ActorSystem[_])
   extends Directives with JsonSupport  {
 
   private implicit val timeout: Timeout =

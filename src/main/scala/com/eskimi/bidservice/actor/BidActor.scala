@@ -1,8 +1,8 @@
-package com.eskimi.bidservice.actors
+package com.eskimi.bidservice.actor
 
 import akka.actor.typed.scaladsl.Behaviors
 import akka.actor.typed.{ActorRef, Behavior}
-import com.eskimi.bidservice.models.{BidRequest, BidResponse}
+import com.eskimi.bidservice.model.{BidRequest, BidResponse}
 import com.eskimi.bidservice.service.BidService
 
 object BidActor {

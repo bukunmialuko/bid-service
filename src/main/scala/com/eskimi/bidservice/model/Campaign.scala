@@ -1,4 +1,4 @@
-package com.eskimi.bidservice.models
+package com.eskimi.bidservice.model
 
 case class Campaign(
                      id: Int,

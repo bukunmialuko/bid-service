@@ -1,6 +1,6 @@
 package com.eskimi.bidservice.service
 
-import com.eskimi.bidservice.models.{Banner, BidRequest}
+import com.eskimi.bidservice.model.{Banner, BidRequest}
 
 
 final case class BidResult(campaignId: String, bidFloor: Double, banner: Banner)
