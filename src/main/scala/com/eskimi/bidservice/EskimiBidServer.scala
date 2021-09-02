@@ -6,7 +6,7 @@ import akka.http.scaladsl.server.Route
 
 import scala.util.{Failure, Success}
 
-object Server {
+object EskimiBidServer {
 
   def start(routes: Route)(implicit system: ActorSystem[_]): Unit = {
 
