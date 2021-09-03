@@ -74,3 +74,4 @@ Server should respond with response:
   "price": 3.12123
 }
 ```
+
