@@ -12,7 +12,7 @@ import org.mockito.MockitoSugar
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpecLike
-import com.eskimi.bidservice.CommonFixture._
+import com.eskimi.bidservice.fixture.Fixtures._
 import com.eskimi.bidservice.controller.BidController
 
 class BidControllerSpec extends AnyWordSpecLike

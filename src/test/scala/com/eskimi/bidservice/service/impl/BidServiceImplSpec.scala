@@ -3,7 +3,7 @@ package com.eskimi.bidservice.service.impl
 
 import com.eskimi.bidservice.model._
 import com.eskimi.bidservice.service.{BidResult, CampaignService}
-import com.eskimi.bidservice.CommonFixture._
+import com.eskimi.bidservice.fixture.Fixtures._
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpecLike
 

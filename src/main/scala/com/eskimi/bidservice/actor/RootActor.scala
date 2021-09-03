@@ -3,7 +3,7 @@ package com.eskimi.bidservice.actor
 import akka.actor.typed.scaladsl.Behaviors
 import com.eskimi.bidservice.controller.BidController
 import com.eskimi.bidservice.service.impl.BidServiceImpl
-import com.eskimi.bidservice.EskimiBidServer
+import com.eskimi.bidservice.BidServiceHttpServer
 import com.eskimi.bidservice.service.CampaignService
 
 
@@ -16,7 +16,7 @@ object RootActor {
 
     implicit val system = context.system
     val routes = new BidController(bidActor)
-    EskimiBidServer.start(routes.routes)
+    BidServiceHttpServer.start(routes.routes)
 
     Behaviors.empty
   }

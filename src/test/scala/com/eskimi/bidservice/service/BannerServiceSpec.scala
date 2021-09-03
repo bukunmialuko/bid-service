@@ -1,8 +1,6 @@
-package com.eskimi.bidservice.service.impl
+package com.eskimi.bidservice.service
 
-import com.eskimi.bidservice.model.Impression
-import com.eskimi.bidservice.service.{BannerService, CampaignService}
-import com.eskimi.bidservice.CommonFixture._
+import com.eskimi.bidservice.fixture.Fixtures._
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpecLike
 

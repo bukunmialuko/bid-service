@@ -9,7 +9,8 @@ object CampaignService {
       targeting = Targeting(
         targetedSiteIds = Set(
           "0006a522ce0f4bbbbaa6b3c38cafaa0f"
-        )
+        ),
+        impressionId    = "1"
       ),
       banners = List(Banner(
         id = 1,

@@ -8,7 +8,7 @@ case class Campaign(
                      bid: Double)
 
 case class Targeting(
-                      targetedSiteIds: Set[String])
+                      targetedSiteIds: Set[String], impressionId: String)
 
 case class Banner(
                    id: Int,

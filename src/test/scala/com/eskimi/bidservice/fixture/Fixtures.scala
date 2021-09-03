@@ -1,9 +1,9 @@
-package com.eskimi.bidservice
+package com.eskimi.bidservice.fixture
 
 import com.eskimi.bidservice.model._
 import com.eskimi.bidservice.service.CampaignService
 
-object CommonFixture {
+object Fixtures {
   val bidFloor = 3.12123
   val impression = Impression(
     id = "1",

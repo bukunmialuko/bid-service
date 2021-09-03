@@ -7,7 +7,7 @@ import com.eskimi.bidservice.model._
 import com.eskimi.bidservice.service.{BidResult, BidService}
 import org.mockito.MockitoSugar
 import org.scalatest.wordspec.AnyWordSpecLike
-import com.eskimi.bidservice.CommonFixture._
+import com.eskimi.bidservice.fixture.Fixtures._
 
 class BidActorSpec extends ScalaTestWithActorTestKit with AnyWordSpecLike  with MockitoSugar {
 
