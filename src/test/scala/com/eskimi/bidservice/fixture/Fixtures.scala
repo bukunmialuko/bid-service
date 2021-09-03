@@ -44,6 +44,6 @@ object Fixtures {
     width = 300,
     height = 250
   )
-  val campaign = CampaignService.activeCampaigns(2)
+  val campaign = CampaignService.activeCampaigns.head
 
 }

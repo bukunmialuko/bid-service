@@ -4,6 +4,7 @@ import com.eskimi.bidservice.service.{BannerService, BidResult, BidService}
 
 class BidServiceImpl(campaigns: Seq[Campaign]) extends BidService {
 
+  // * if multiple campaigns/banners match bid request, you should randomly select one of them
   override def processBid(bidRequest: BidRequest): Option[BidResult] =
     (for {
       campaign <- campaigns if campaignMatches(campaign, bidRequest)

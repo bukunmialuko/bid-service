@@ -124,7 +124,7 @@ class BidServiceImplSpec extends AnyWordSpecLike with Matchers {
     "return result with campaign id and list of priced banners" when {
       "request bid matches campaign" in {
 
-        val expectedBanner = campaign.banners(2)
+        val expectedBanner = campaign.banners.head
         val expectedCampId = campaign.id.toString
 
         bidRequestService.processBid(bidRequest) should be(Some(

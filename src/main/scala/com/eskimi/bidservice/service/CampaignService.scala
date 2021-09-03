@@ -44,7 +44,7 @@ object CampaignService {
           height = 250
         )
       ),
-      bid = 3.25d
+      bid = 3.12d
     )
 
     Seq(
