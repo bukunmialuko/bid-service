@@ -5,7 +5,7 @@ object CampaignService {
   def activeCampaigns: Seq[Campaign] = {
     val campaign1 = Campaign(
       id = 1,
-      country = "US",
+      country = "LT",
       targeting = Targeting(
         targetedSiteIds = Set(
           "0006a522ce0f4bbbbaa6b3c38cafaa0f"
