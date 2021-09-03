@@ -2,7 +2,7 @@
 
 ## Description
 
-http server app implements simple realtime bidding agent
+A real-time bidding agent using Scala and Akka toolkit.
 
 ## Build/Run Requirements
 JDK/JRE 11 or newer is recommended to be able to build/test/run the project
