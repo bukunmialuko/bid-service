@@ -27,6 +27,7 @@ class BidServiceImpl(campaigns: Seq[Campaign]) extends BidService {
     }
       .getOrElse(List.empty)
 
+  // device.geo object has a higher priority than user.geo object
   private [impl] def getCountry(bidRequest: BidRequest): Option[String] =
     getDeviceCountry(bidRequest) orElse getUserCountry(bidRequest)
 

@@ -4,5 +4,5 @@ case class BidResponse(
                         id: String,
                         bidRequestId: String,
                         price: Double,
-                        adid: Option[String],
+                        adId: Option[String],
                         banner: Option[Banner])

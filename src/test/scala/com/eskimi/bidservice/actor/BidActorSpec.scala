@@ -21,7 +21,7 @@ class BidActorSpec extends ScalaTestWithActorTestKit with AnyWordSpecLike  with 
           id = "response1",
           bidRequestId = requestId,
           price = bidFloor,
-          adid = Some(adId),
+          adId = Some(adId),
           banner = Some(banner)
         ))
       )

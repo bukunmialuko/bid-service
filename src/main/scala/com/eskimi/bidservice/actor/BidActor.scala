@@ -26,7 +26,7 @@ object BidActor {
           id = s"response$responseId",
           bidRequestId = message.bidRequest.id,
           price = result.bidFloor,
-          adid = Some(result.campaignId),
+          adId = Some(result.campaignId),
           banner = Some(result.banner)
         )
       }
